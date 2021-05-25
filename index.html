@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Слайдер на CSS</title>
+  </head>
+  <body>
+    <section class="services">
+      <h2>Сервисы</h2>
+      <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+      <div class="slider">
+        <input type="radio" id="btn-delivery" class="btn-delivery" name="service-name" checked> 
+        <label for="btn-delivery" class="lbl-delivery">Доставка</label>
+        <input type="radio" id="btn-guarantee" class="btn-guarantee" name="service-name"> 
+        <label for="btn-guarantee" class="lbl-guarantee">Гарантия</label>
+        <input type="radio" id="btn-credit" class="btn-credit" name="service-name"> 
+        <label for="btn-credit" class="lbl-credit">Кредит</label>
+  
+        <div class="slide slide-delivery">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+        </div>
+        <div class="slide slide-guarantee">
+          <h3>Гарантия</h3>
+          <p>(текст про гарантию)</p>
+        </div>
+        <div class="slide slide-credit">
+          <h3>Кредит</h3>
+          <p>(текст про кредит)</p>
+        </div>
+	  </div>
+    </section>
+  </body>
+</html>

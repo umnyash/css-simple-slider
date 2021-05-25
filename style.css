@@ -1,0 +1,86 @@
+/* Реализация */
+.slide {
+  display: none;
+}
+
+input:checked + label {
+  background-color: #ffffff;
+  color: #32425C;	
+}
+
+.btn-delivery:checked ~ .slide-delivery {
+  display: block;	
+}
+.btn-guarantee:checked ~ .slide-guarantee {
+  display: block;	
+}
+.btn-credit:checked ~ .slide-credit {
+  display: block;	
+}
+
+/* Сетка */
+.slider {
+  display: grid;
+  grid-template-columns: 240px 300px;
+  grid template-rows: 61px 61px 61px;
+  column-gap: 80px;
+}
+
+.lbl-delivery {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.lbl-guarantee {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.lbl-credit {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.slide {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+
+/* Стилизация */
+input[class^="btn-"] {
+  display: none;
+}
+
+label {
+  display: block;
+  box-sizing: border-box;
+  width: 240px;
+  height: 61px;
+  padding-left: 22px;
+  background-color: #32425C;
+  color: #ffffff;
+  vertical-align: middle;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 61px;
+}
+
+label:hover {
+  background-color: #293449;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
