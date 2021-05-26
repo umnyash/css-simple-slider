@@ -8,13 +8,13 @@ input:checked + label {
   color: #32425C;	
 }
 
-.btn-delivery:checked ~ .slide-delivery {
+.btn-delivery:checked ~ .slide-list .slide-delivery {
   display: block;	
 }
-.btn-guarantee:checked ~ .slide-guarantee {
+.btn-guarantee:checked ~ .slide-list .slide-guarantee {
   display: block;	
 }
-.btn-credit:checked ~ .slide-credit {
+.btn-credit:checked ~ .slide-list .slide-credit {
   display: block;	
 }
 
@@ -22,7 +22,7 @@ input:checked + label {
 .slider {
   display: grid;
   grid-template-columns: 240px 300px;
-  grid template-rows: 61px 61px 61px;
+  grid template-rows: 61px 61px 61px auto;
   column-gap: 80px;
 }
 
@@ -41,12 +41,21 @@ input:checked + label {
   grid-row: 3 / 4;
 }
 
-.slide {
+.slide-list {
   grid-column: 2 / 3;
-  grid-row: 1 / 4;
+  grid-row: 1 / 5;
 }
 
 /* Стилизация */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.5em;
+}
+
+p {
+  width: 520px;
+}
+
 input[class^="btn-"] {
   display: none;
 }
@@ -60,7 +69,6 @@ label {
   background-color: #32425C;
   color: #ffffff;
   vertical-align: middle;
-  font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 61px;
@@ -70,7 +78,18 @@ label:hover {
   background-color: #293449;
 }
 
+.slide-list {
+  margin: 0;
+}
 
+.slide dt {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.slide dd {
+  margin: 0;
+}
 
 
 
